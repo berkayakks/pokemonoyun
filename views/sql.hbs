@@ -1,0 +1,16 @@
+
+ <form id="registerform" action="/sql"  method="post">
+        <input class="text" type="text" name="adınız" placeholder="adınız" required="">
+        <input class="text" type="password" name="soyadınız" placeholder="soyadınız" required="">
+        <input class="text" type="password" name="yasınız" placeholder="yasınız" required="">
+                    
+        <input id="register" type="submit" value="SIGNUP">
+</form>
+
+
+<script>
+    $(document).ready(function(){
+        alert(sql[0].adınız);
+    })
+    var sql ={{{sql}}}
+</script>

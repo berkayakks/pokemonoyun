@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <title>Hello, world!</title>
+
+</head>
+
+<body>
+
+
+  {{!-- <a href="/hepsinisil">hepsini sil</a> --}}
+
+  <div class="box">
+    <div class="kutu">
+      <p class="kapat">kapat</p>
+      <div id="slider">
+        <div class="slider">
+          <ul>
+            <li><a href=""><img width="640px" height="426px" src="/assets/images/0.gif"></a></li>
+            <li><a href=""><img width="640px" height="426px" src="/assets/images/1.gif"></a></li>
+            <li><a href=""><img width="640px" height="426px" src="/assets/images/2.gif"></a></li>
+            <li><a href=""><img width="640px" height="426px" src="/assets/images/3.gif"></a></li>
+            <li><a href=""><img width="640px" height="426px" src="/assets/images/4.gif"></a></li>
+          </ul>
+        </div>
+        <div class="slider-buton">
+          <a href="#" class="geri-button">geri</a>
+          <a href="#" class="ileri-button">ileri</a>
+          <a href="#" class="sec">pokemonunu seç</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header">
+    <h1 id="username"
+      style="margin-top:15px;font-family: 'Black Han Sans', sans-serif;color: white;text-shadow: 2px 2px #333;"
+      align="center">
+    </h1>
+    <h1 id="puan"
+      style="font-size: 15px;margin-top:15px;font-family: 'Black Han Sans', sans-serif;color: white;text-shadow: 2px 2px #333;"
+      align="center">
+
+    </h1>
+    <div class="row">
+      <div align="center" class="col-md-12">
+        <div class="header-text">
+          <h1 class="header-item">KARAKTERINIZI SECIN VE OYUNA BASLAYIN</h1>
+          <H3 class="header-item">IYI OLAN KAZANSIN</H3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row header-middle">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-2">
+            <img style="margin-left: 50px;margin-top: -10px;" src="/assets/images/heard.png" width="50px" height="50px"
+              alt="">
+          </div>
+          <div class="col-md-10">
+            <div class="progress progress1">
+              <div class="canbar1 progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+        <img class="ball1" src="/assets/images/ball.gif" width="200px" height="200px" alt="">
+        <br>
+        <button class="pokemon-sec btn btn-success">pokemonunu seç</button>
+        <br>
+        <p class="kazanan1">sonucu goster</p>
+        <div class="matematik-islem1">
+          <div class="rakamlar">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="sayi1">30</h2>
+                <h2 class="islem">*</h2>
+                <h2 class="sayi2">30</h2>
+              </div>
+            </div>
+          </div>
+          <br>
+          <input placeholder="cevabını ver" class="mat-input form-control" type="text">
+          <br>
+          <button class="cevapla btn btn-success cevapla">cevapla</button>
+          <br>
+          <h1 class="geri-sayim">30</h1>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-2">
+            <img style="margin-left: 50px;margin-top: -10px;" src="/assets/images/heard.png" width="50px" height="50px"
+              alt="">
+          </div>
+          <div class="col-md-10">
+            <div class="progress progress2">
+              <div class="canbar2 progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+        <img class="ball2" src="/assets/images/ball.gif" width="200px" height="200px" alt="">
+        <br>
+        <button class="pokemon-sec2 btn btn-success ">pokemonunu seç</button>
+        <br>
+        <p class="kazanan2"> sonucu goster</p>
+        <div class="matematik-islem2">
+          <div class="rakamlar">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="sayi1">30</h2>
+                <h2 class="islem">*</h2>
+                <h2 class="sayi2">30</h2>
+              </div>
+            </div>
+          </div>
+          <br>
+          <input placeholder="cevabını ver" class="mat-input2 form-control" type="text">
+          <br>
+          <button class="cevapla btn btn-success cevapla">cevapla</button>
+          <br>
+          <h1 class="geri-sayim">30</h1>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <button class="sonuclar btn btn-primary">sonucları göster</button>
+      <div class="derece-text" style=" font-family: 'Black Han Sans', sans-serif;
+           color: white;
+           text-shadow: 2px 2px #333;margin: 0 auto;">
+        <p style="color: white; font-size: 24px;">seviyeni belirle</p>
+      </div>
+    </div>
+    <select style="width: 200px; margin: 0 auto;" id="derece" class="form-control">
+      <option>düşük</option>
+      <option>orta</option>
+      <option>zor</option>
+    </select>
+    <div class="row">
+      <button style="display:none;padding:10px ;margin: 0 auto" class="tekrar-oyna btn btn-primary">tekrar oyna</button>
+    </div>
+  </div>
+  <script>
+
+    $(document).ready(function () {
+      /* slider oluşturma alanı */
+      var x = 0;
+      var timerx = 0;
+      var pokisecim = 0;
+      var pokemonum1;
+      var pokemonum2;
+      var gerisayim;
+      var sonucsecim;
+      var sonucsecim2;
+      var haritasecim;
+      var rasgele1;
+      var rasgele2;
+      var rasgeleislem;
+      var matsonuc;
+      var isaret;
+      var canbar1 = 100;
+      var canbar2 = 100;
+      var lisayisi = $(".slider ul li").length;
+      var ligenislik = 640;
+      var toplamgenislik = ligenislik * lisayisi;
+      var liDeger = 0;
+      $(".slider ul").css({ "width": toplamgenislik + "px" });
+
+      $("a.ileri-button").click(function () {
+
+        if (liDeger < lisayisi - 1) {//-1 yapmanın nedeni 1 tanesi zaten gözüküyo elde 4 kalıyo
+
+          liDeger++;
+          yenigenişlik = ligenislik * liDeger;//bu alande her seferinde çarpıyor ama yeni genişliği açağıda belirlediğimiz için üzerine eklenmiyor yeni değer alıyor
+          $(".slider ul").stop().animate({ //yani -640 sonra -640 üzerine eklenerek değil -1280 seksene kayarak git diyor.
+            marginLeft: "-" + yenigenişlik + "px"
+          }, 1000)
+        }
+        else {
+          $(".slider ul").stop().animate({
+            marginLeft: "0px"
+          }, 1000)
+          liDeger = 0;
+
+        }
+      });
+      $("a.geri-button").click(function () {
+
+        if (liDeger > 0) {
+
+          liDeger--;
+          yenigenişlik = ligenislik * liDeger;
+          $(".slider ul").stop().animate({
+            marginLeft: "-" + yenigenişlik + "px"
+          }, 1000)
+        }
+        else {
+          $(".slider ul").stop().animate({
+            marginLeft: "-" + (toplamgenislik - 640) + "px"//burada da -640 yapmanın nedeni 5 tane gibi gözükmesine rağmen biz 4 resim kaysın diyoruz
+          }, 1000)
+          liDeger = lisayisi - 1;
+
+        }
+        //slider oluşturma alanı sonu
+      });
+      //tıklandığında gizli slider açılma kodları//
+      $(".pokemon-sec").click(function () {
+        $(".box").fadeIn(1000);
+        pokisecim = 1;
+      });
+      $(".pokemon-sec2").click(function () {
+        $(".box").fadeIn(1000);
+        pokisecim = 2;
+      });
+      //kod sonu
+      //açılan slideri kapatabilmek için yazılan kod satırı//
+      $(".kapat").click(function () {
+        $(".box").fadeOut(1000);
+      });
+      //kod sonu
+      //slider içinden istenilen pomenonu seçmek için yazılan kod alanı
+      $(".sec").click(function () {
+        if (pokisecim == 1) {
+          $(".ball1").attr("src", "/assets/images/" + liDeger + ".gif");
+          if (liDeger == 0) { //ileride kazananı belirlemek için gerekli olan değişken 
+            pokemonum1 = "squirtle";
+          }
+          else if (liDeger == 1) {
+            pokemonum1 = "charmander";
+          }
+          else if (liDeger == 2) {
+            pokemonum1 = "pikachu";
+          }
+          else if (liDeger == 3) {
+            pokemonum1 = "Geodude";
+          }
+          else if (liDeger == 4) {
+            pokemonum1 = "balbazar";
+          }
+          $(".box").fadeOut(500);
+          pokisecim = 0;
+          sonucsecim = liDeger; //seçtiğin pokemonun index numarası burada kayıt oluyor
+        }
+        if (pokisecim == 2) {
+          $(".ball2").attr("src", "/assets/images/" + liDeger + ".gif");
+          $(".box").fadeOut(500);
+          if (liDeger == 0) {
+            pokemonum2 = "squirtle";
+          }
+          else if (liDeger == 1) {
+            pokemonum2 = "charmander";
+          }
+          else if (liDeger == 2) {
+            pokemonum2 = "pikachu";
+          }
+          else if (liDeger == 3) {
+            pokemonum2 = "Geodude";
+          }
+          else if (liDeger == 4) {
+            pokemonum2 = "balbazar";
+          }
+          pokisecim = 0;
+          sonucsecim2 = liDeger; //burada da seçtiğin 2 pokemonun index numarası kayıt oluyor
+        }
+        //kod sonu
+      });
+      //iç içe 3 boyutlu dizi oluşturma kod alanı
+      var Takimlar = new Array(4);
+
+
+      for (var i = 0; i <= 4; i++) {
+
+        Takimlar[i] = new Array(4);
+        for (var j = 0; j <= 4; j++) {
+          Takimlar[i][j] = new Array(4);
+        }
+
+      }
+      //kod sonu
+      //hangi pokemonun kazanacağını gösteren kod alanı
+      Takimlar[0][0][0] = 5;        //su sahası 0                  
+      Takimlar[0][0][1] = 5;        //ateş sahası 1
+      Takimlar[0][0][2] = 5;        //toprak saha 2
+      Takimlar[0][1][0] = 0;
+      Takimlar[0][1][1] = 5;
+      Takimlar[0][1][2] = 0;
+      Takimlar[0][2][0] = 5;
+      Takimlar[0][2][1] = 2;
+      Takimlar[0][2][2] = 5;
+      Takimlar[0][3][0] = 0;
+      Takimlar[0][3][1] = 0;
+      Takimlar[0][3][2] = 5;
+      Takimlar[0][4][0] = 5;
+      Takimlar[0][4][1] = 4;
+      Takimlar[0][4][2] = 4;
+
+      Takimlar[1][0][0] = 0;
+      Takimlar[1][0][1] = 5;
+      Takimlar[1][0][2] = 0;
+      Takimlar[1][1][0] = 5;
+      Takimlar[1][1][1] = 5;
+      Takimlar[1][1][2] = 5;
+      Takimlar[1][2][0] = 2;
+      Takimlar[1][2][1] = 1;
+      Takimlar[1][2][2] = 2;
+      Takimlar[1][3][0] = 3;
+      Takimlar[1][3][1] = 1;
+      Takimlar[1][3][2] = 3;
+      Takimlar[1][4][0] = 5;
+      Takimlar[1][4][1] = 1;
+      Takimlar[1][4][2] = 5;
+
+      Takimlar[2][0][0] = 5;
+      Takimlar[2][0][1] = 2;
+      Takimlar[2][0][2] = 2;
+      Takimlar[2][1][0] = 2;
+      Takimlar[2][1][1] = 5;
+      Takimlar[2][1][2] = 2;
+      Takimlar[2][2][0] = 5;
+      Takimlar[2][2][1] = 5;
+      Takimlar[2][2][2] = 5;
+      Takimlar[2][3][0] = 3;
+      Takimlar[2][3][1] = 3;
+      Takimlar[2][3][2] = 3;
+      Takimlar[2][4][0] = 5;
+      Takimlar[2][4][1] = 2;
+      Takimlar[2][4][2] = 5;
+
+      Takimlar[3][0][0] = 0;
+      Takimlar[3][0][1] = 0;
+      Takimlar[3][0][2] = 5;
+      Takimlar[3][1][0] = 3;
+      Takimlar[3][1][1] = 5;
+      Takimlar[3][1][2] = 3;
+      Takimlar[3][2][0] = 3;
+      Takimlar[3][2][1] = 3;
+      Takimlar[3][2][2] = 3;
+      Takimlar[3][3][0] = 5;
+      Takimlar[3][3][1] = 5;
+      Takimlar[3][3][2] = 5;
+      Takimlar[3][4][0] = 3;
+      Takimlar[3][4][1] = 3;
+      Takimlar[3][4][2] = 3;
+
+      Takimlar[4][0][0] = 5;
+      Takimlar[4][0][1] = 5;
+      Takimlar[4][0][2] = 4;
+      Takimlar[4][1][0] = 5;
+      Takimlar[4][1][1] = 1;
+      Takimlar[4][1][2] = 5;
+      Takimlar[4][2][0] = 5;
+      Takimlar[4][2][1] = 2;
+      Takimlar[4][2][2] = 4;
+      Takimlar[4][3][0] = 3;
+      Takimlar[4][3][1] = 3;
+      Takimlar[4][3][2] = 3;
+      Takimlar[4][4][0] = 5;
+      Takimlar[4][4][1] = 5;
+      Takimlar[4][4][2] = 5;
+      //kod sonu
+      //oyun her açıldığında rasgele stad gelmesini sağlayan kod alanı
+      var rnd = Math.floor(Math.random() * 3)
+      $("body").css({ "background": "url('/assets/images/" + rnd + ".jpg') no-repeat center center fixed" });
+      //kod sonu
+      //sonucları öğrenmek için yazılan kod satırı
+      $(".sonuclar").click(function () {
+
+        var kazandı = Takimlar[sonucsecim][sonucsecim2][rnd]; //burada harita ve karakterlerin indexleri alınarak dizi içerisine yerleştirdim ve bununla birlikte kimin kazandığını öğreniyorum
+        if (sonucsecim == kazandı) { //açılan paragraflara göre sonucların eklenmesi //sonucsecim == kazandı alanında dizideki değer gerekli şartlara göre kazananın index nosu yada beraberliği belli eden 5 kodu geliyor 
+
+          $(".kazanan1").text("kazanan");    //kazanan belirlendikten sonra bu alanda gerekli süslemeler yapılıyor
+          $(".kazanan1").css({ "color": "green" }); //if şartında diziden gelen numara ile secilen pokemon uyumluysa kazanmış oluyor
+          $(".kazanan2").text("kaybeden");
+          $(".kazanan2").css({ "color": "red" });
+          $(".sonuclar").fadeOut();
+
+          //$(".canbar2").css({"width":""+canbar2+"%"});
+        }
+        else if (sonucsecim2 == kazandı) {
+          // canbar1-=20;
+          $(".kazanan1").text("kaybeden");
+          $(".kazanan1").css({ "color": "red" });
+          $(".kazanan2").text("kazanan");
+          $(".kazanan2").css({ "color": "green" });
+          $(".sonuclar").fadeOut();
+
+          // $(".canbar1").css({"width":""+canbar1+"%"});
+        }
+        else {
+          $(".kazanan1").text("berabere kalindi");
+          $(".kazanan1").css({ "color": "blue" });
+          $(".kazanan2").text("berabere kalindi");
+          $(".kazanan2").css({ "color": "blue" });
+          $(".sonuclar").fadeOut();//kod sonu
+
+        }
+        $(".pokemon-sec").fadeOut(500); //tekrar seçmeyi önlemek amacıyla butonlar saklanıyor
+        $(".pokemon-sec2").fadeOut(500);
+        $("#derece").hide();
+        $(".derece-text").hide();
+        $(".matematik-islem1").fadeIn(500); //islemlerin yapılacağı ilk alan açılıyor
+        if ($("#derece").val() == "düşük") {
+          rasgele1 = parseInt(Math.floor(Math.random() * 10)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+          $(".sayi1").text(rasgele1);
+          rasgele2 = parseInt(Math.floor(Math.random() * 10));
+          $(".sayi2").text(rasgele2);
+          rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+        }
+        if ($("#derece").val() == "orta") {
+          rasgele1 = parseInt(Math.floor(Math.random() * 30)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+          $(".sayi1").text(rasgele1);
+          rasgele2 = parseInt(Math.floor(Math.random() * 30));
+          $(".sayi2").text(rasgele2);
+          rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+        }
+        if ($("#derece").val() == "zor") {
+          rasgele1 = parseInt(Math.floor(Math.random() * 100)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+          $(".sayi1").text(rasgele1);
+          rasgele2 = parseInt(Math.floor(Math.random() * 100));
+          $(".sayi2").text(rasgele2);
+          rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+        }
+        if (rasgeleislem == 0) {
+          $(".islem").text("+");
+          matsonuc = rasgele1 + rasgele2;
+        }
+        else if (rasgeleislem == 1) {
+          $(".islem").text("-");
+          matsonuc = rasgele1 - rasgele2;
+        }
+        else if (rasgeleislem == 2) {
+          $(".islem").text("*");
+          matsonuc = rasgele1 * rasgele2;
+        }
+        else if (rasgeleislem == 3) {
+          $(".islem").text("/");
+          matsonuc = rasgele1 / rasgele2;
+        }
+
+        gerisayim = 29;  //burası timer isleminin başladığı alan 29 dan başlatılıyor
+        var intervalim = setInterval(function () {
+          $(".geri-sayim").text(gerisayim); //p etiketine her saniye atılıyor
+          gerisayim--;
+          if (gerisayim == 28) { //harici animate kodları sıfırlanma işlemi
+            $(".progress1").removeClass("wow flash animated");
+            $(".progress2").removeClass("wow flash animated");
+          }
+          if (gerisayim == -1) { //süre dolduğunda eğer ilk aşamadaysa yani timerx 0 ise ikince matematik alanı eğer tam tersiyle 1. matematik alanı açılıyor
+            if (timerx == 0) {
+              //clearInterval(intervalim);
+              gerisayim = 29;
+              $(".matematik-islem1").fadeOut(500);
+              $(".matematik-islem2").fadeIn(500);
+              if ($("#derece").val() == "düşük") {
+                rasgele1 = parseInt(Math.floor(Math.random() * 10)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+                $(".sayi1").text(rasgele1);
+                rasgele2 = parseInt(Math.floor(Math.random() * 10));
+                $(".sayi2").text(rasgele2);
+                rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+              }
+              if ($("#derece").val() == "orta") {
+                rasgele1 = parseInt(Math.floor(Math.random() * 30)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+                $(".sayi1").text(rasgele1);
+                rasgele2 = parseInt(Math.floor(Math.random() * 30));
+                $(".sayi2").text(rasgele2);
+                rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+              }
+              if ($("#derece").val() == "zor") {
+                rasgele1 = parseInt(Math.floor(Math.random() * 100)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+                $(".sayi1").text(rasgele1);
+                rasgele2 = parseInt(Math.floor(Math.random() * 100));
+                $(".sayi2").text(rasgele2);
+                rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+              }
+              if (rasgeleislem == 0) {
+                $(".islem").text("+");
+                matsonuc = rasgele1 + rasgele2;
+
+              }
+              else if (rasgeleislem == 1) {
+                $(".islem").text("-");
+                matsonuc = rasgele1 - rasgele2;
+
+              }
+              else if (rasgeleislem == 2) {
+                $(".islem").text("*");
+                matsonuc = rasgele1 * rasgele2;
+
+              }
+              else if (rasgeleislem == 3) {
+                $(".islem").text("/");
+                matsonuc = rasgele1 / rasgele2;
+
+              }
+              timerx = 1;
+              x = 1;
+            }
+            else if (timerx == 1) {
+              gerisayim = 29;
+              $(".matematik-islem2").fadeOut(500);  //burada yukarıda belirtildiği gibi tam tersi işlem oluşuyor
+              $(".matematik-islem1").fadeIn(500);
+              if ($("#derece").val() == "düşük") {
+                rasgele1 = parseInt(Math.floor(Math.random() * 10)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+                $(".sayi1").text(rasgele1);
+                rasgele2 = parseInt(Math.floor(Math.random() * 10));
+                $(".sayi2").text(rasgele2);
+                rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+              }
+              if ($("#derece").val() == "orta") {
+                rasgele1 = parseInt(Math.floor(Math.random() * 30)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+                $(".sayi1").text(rasgele1);
+                rasgele2 = parseInt(Math.floor(Math.random() * 30));
+                $(".sayi2").text(rasgele2);
+                rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+              }
+              if ($("#derece").val() == "zor") {
+                rasgele1 = parseInt(Math.floor(Math.random() * 100)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+                $(".sayi1").text(rasgele1);
+                rasgele2 = parseInt(Math.floor(Math.random() * 100));
+                $(".sayi2").text(rasgele2);
+                rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+              }
+              if (rasgeleislem == 0) {
+                $(".islem").text("+");
+                matsonuc = rasgele1 + rasgele2; //rasgele oluşan sayılar burada matsonuca atılıyor
+
+              }
+              else if (rasgeleislem == 1) {
+                $(".islem").text("-");
+                matsonuc = rasgele1 - rasgele2;
+
+              }
+              else if (rasgeleislem == 2) {
+                $(".islem").text("*");
+                matsonuc = rasgele1 * rasgele2;
+
+              }
+              else if (rasgeleislem == 3) {
+                $(".islem").text("/");
+                matsonuc = rasgele1 / rasgele2;
+
+              }
+              timerx = 0;
+              x = 2;
+            }
+          }
+        }, 1000);
+      });
+
+      $(".cevapla").click(function () {//aynı taktik burada da uygulandı ilk tıkladığında x=1 oluyo sonra 2 buna göre tıklama
+        //sırası belirlenmiş oluyor
+
+        x++;
+
+        if (x == 1) {
+          timerx = 1;
+          gerisayim = 29;
+          if ($(".mat-input").val() == matsonuc) { //girdiğin değerle belirlenen değer uyuşursa doğru bildiğin onaylanıyor
+            if ($(".kazanan1").text() == "kazanan") { //eğer doğru bildin ve bulunduğun pokemon kazanan pokemonsa can barından
+              canbar2 -= 20; //-20 gidiyor aksi taktirde -10 gidiyor
+              $(".canbar2").css({ "width": "" + canbar2 + "%" });
+              $(".progress2").addClass("wow flash animated");
+
+              if (canbar2 == 0) {
+                debugger;
+                alert("tebrikler " + pokemonum1 + " kazandı");
+                puangüncelle(1);
+                $(".tekrar-oyna").fadeIn();
+              }
+            }
+            else {
+              canbar2 -= 10;
+              $(".canbar2").css({ "width": "" + canbar2 + "%" });
+              $(".progress2").addClass("wow flash animated");
+
+              if (canbar2 == 0) {
+                debugger;
+                alert("tebrikler " + pokemonum1 + " kazandı");
+                puangüncelle(1);
+                $(".tekrar-oyna").fadeIn();
+              }
+            }
+          }
+
+          if (canbar1 == 0 || canbar2 == 0) {// ikisinden biri 0 olduysa iki mat islem alanıda kendini kapatıyor
+            $(".matematik-islem1").fadeOut(500);
+            $(".matematik-islem2").fadeOut(500);
+          }
+          else {
+
+            $(".matematik-islem1").fadeOut(500);
+            $(".matematik-islem2").fadeIn(500);
+          }
+          if ($("#derece").val() == "düşük") {
+            rasgele1 = parseInt(Math.floor(Math.random() * 10)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+            $(".sayi1").text(rasgele1);
+            rasgele2 = parseInt(Math.floor(Math.random() * 10));
+            $(".sayi2").text(rasgele2);
+            rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+          }
+          if ($("#derece").val() == "orta") {
+            rasgele1 = parseInt(Math.floor(Math.random() * 30)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+            $(".sayi1").text(rasgele1);
+            rasgele2 = parseInt(Math.floor(Math.random() * 30));
+            $(".sayi2").text(rasgele2);
+            rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+          }
+          if ($("#derece").val() == "zor") {
+            rasgele1 = parseInt(Math.floor(Math.random() * 100)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+            $(".sayi1").text(rasgele1);
+            rasgele2 = parseInt(Math.floor(Math.random() * 100));
+            $(".sayi2").text(rasgele2);
+            rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+          }
+          if (rasgeleislem == 0) {
+            $(".islem").text("+");
+            matsonuc = rasgele1 + rasgele2;
+
+          }
+          else if (rasgeleislem == 1) {
+            $(".islem").text("-");
+            matsonuc = rasgele1 - rasgele2;
+
+          }
+          else if (rasgeleislem == 2) {
+            $(".islem").text("*");
+            matsonuc = rasgele1 * rasgele2;
+
+          }
+          else if (rasgeleislem == 3) {
+            $(".islem").text("/");
+            matsonuc = rasgele1 / rasgele2;
+
+          }
+        }
+        else if (x == 2) { //aynısı diğer mat islem alanı için geçerli
+
+          timerx = 0;
+          gerisayim = 29;
+          if ($(".mat-input2").val() == matsonuc) {
+            if ($(".kazanan2").text() == "kazanan") {
+              canbar1 -= 20;
+              $(".canbar1").css({ "width": "" + canbar1 + "%" });
+              $(".progress1").addClass("wow flash animated");
+
+              if (canbar1 == 0) {
+                debugger;
+                alert("tebrikler " + pokemonum2 + " kazandı");
+                puangüncelle(0);
+                $(".tekrar-oyna").fadeIn();
+              }
+            }
+            else {
+              canbar1 -= 10;
+              $(".canbar1").css({ "width": "" + canbar1 + "%" });
+              $(".progress1").addClass("wow flash animated");
+
+              if (canbar1 == 0) {
+                debugger;
+                alert("tebrikler " + pokemonum2 + " kazandı");
+                puangüncelle(0);
+                $(".tekrar-oyna").fadeIn();
+              }
+            }
+          }
+
+          if (canbar1 == 0 || canbar2 == 0) {
+            $(".matematik-islem1").fadeOut(500);
+            $(".matematik-islem2").fadeOut(500);
+          }
+          else {
+
+            $(".matematik-islem1").fadeIn(500);
+            $(".matematik-islem2").fadeOut(500);
+          }
+          if ($("#derece").val() == "düşük") {
+            rasgele1 = parseInt(Math.floor(Math.random() * 10)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+            $(".sayi1").text(rasgele1);
+            rasgele2 = parseInt(Math.floor(Math.random() * 10));
+            $(".sayi2").text(rasgele2);
+            rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+          }
+          if ($("#derece").val() == "orta") {
+            rasgele1 = parseInt(Math.floor(Math.random() * 30)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+            $(".sayi1").text(rasgele1);
+            rasgele2 = parseInt(Math.floor(Math.random() * 30));
+            $(".sayi2").text(rasgele2);
+            rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+          }
+          if ($("#derece").val() == "zor") {
+            rasgele1 = parseInt(Math.floor(Math.random() * 100)); //rasgele 0 ile 50 arasında rakamlar belirleniyor
+            $(".sayi1").text(rasgele1);
+            rasgele2 = parseInt(Math.floor(Math.random() * 100));
+            $(".sayi2").text(rasgele2);
+            rasgeleislem = parseInt(Math.floor(Math.random() * 3));
+          }
+          if (rasgeleislem == 0) {
+            $(".islem").text("+");
+            matsonuc = rasgele1 + rasgele2;
+          }
+          else if (rasgeleislem == 1) {
+            $(".islem").text("-");
+            matsonuc = rasgele1 - rasgele2;
+          }
+          else if (rasgeleislem == 2) {
+            $(".islem").text("*");
+            matsonuc = rasgele1 * rasgele2;
+          }
+          else if (rasgeleislem == 3) {
+            $(".islem").text("/");
+            matsonuc = rasgele1 / rasgele2;
+          }
+          x = 0;
+        }
+
+        $(".mat-input2").val("");
+        $(".mat-input").val("");
+      });
+      $(".tekrar-oyna").click(function () { //tekrar oynayınca sayfa yeniden başlıyor
+        location.reload();
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>
+
+<script>
+  function puangüncelle(deger) {
+    debugger;
+    deneme[0].puangüncelle=deger;
+    debugger;
+    $.ajax({
+      url: "/guncelle",
+      type: "post",
+      data: deneme[0],
+      success: function (gunceldeger) {
+        debugger;
+        if(deneme[0].puangüncelle=1){
+          debugger;
+          deneme[0].puan=gunceldeger.puan;
+          //alert("50 puan kazandınız");
+          $("#puan").text(deneme[0].puan+" puan");
+        }
+        else{
+          debugger;
+          deneme[0].puan=gunceldeger.puan;
+          //alert("50 puan kaybettiniz");
+          $("#puan").text(deneme[0].puan+" puan");
+        }
+      }
+    })
+  }
+
+
+  $(document).ready(function () {
+    debugger;
+    if (deneme != "misafir girişi") {
+      $("#username").text("HOSGELDIN " + deneme[0].kullaniciadi)
+      $("#puan").text(deneme[0].puan + " puan");
+    }
+    else {
+      $("#username").text("MISAFIR KULLANICI");
+    }
+    /*$("#gönder").on("click", function () {
+      debugger;
+      $.ajax({
+        url: "/berkay",
+        type: "post",
+        data: $("#deneme").serialize(),
+        success: function (veri) {
+          debugger;
+          alert("tebrikler");
+        }
+      })
+    })*/
+
+
+  })
+
+  debugger;
+  var deneme = {{{ list }}}
+</script>

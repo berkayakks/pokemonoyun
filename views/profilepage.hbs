@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Civic - CV Resume</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Civic - CV Resume">
+	<meta name="keywords" content="resume, civic, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	
+	
+
+	<!-- Hero section start -->
+	<section class="hero-section spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero-text">
+								<h2 class="eğitmenismi">Maria Williams</h2>
+								<p class="eğitmenaciklama">acemi aşamada</p>
+							</div>
+							<div class="hero-info">
+								<h2>genel bilgiler</h2>
+								<ul>
+									<li ><span>puanı</span> <span class="puan"></span></li>
+									<li><span style="margin-right: 15px;">oynanan son 3 oyun :</span><span class="sonoyunlar"></li>
+									<li><span>kazanma oranı :</span><span style="margin-left:20px" class="gmoranlar"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="hero-image">
+								<img src="/assets/images/hero.jpg" alt="5">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+
+	
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		var profile ={{{list}}}
+		$(document).ready(function(){
+			$(".eğitmenismi").text(profile[0].kullaniciadi);
+			$(".puan").text(profile[0].puan);
+			$(".gmoranlar").text("%"+(profile[0].galibiyet/(profile[0].maglubiyet+profile[0].galibiyet))*100);
+			//console.log(profile);
+			for(var i=0;i<profile[1].length;i++){
+				if(profile[1][i].sonuc==1){
+					debugger;
+					$(".sonoyunlar").append("<b style='color:green;margin-right:10px;margin-top:50px;'>galibiyet</b>");
+					
+				}
+				else{
+					debugger;
+					$(".sonoyunlar").append("<b style='color:red;margin-right:10px;margin-top:50px;'>yenilgi</b>");
+					$(".sonoyunlar").eq(i).css("color", "red");
+				}
+				
+			}
+		})
+	</script>
+</body>
+</html>
